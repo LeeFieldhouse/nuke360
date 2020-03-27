@@ -1,38 +1,42 @@
 <!doctype html>
-	<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- CSRF Token -->
-		<meta name="csrf-token" content="{{ csrf_token() }}">
-		@yield('meta_tags')
-		@if(env('APP_DEBUG') == 'true')
-			<meta name="robots" content="noindex,nofollow">
-		@endif
-		
-		<title>{{ config('app.name', 'Laravel') }} | Rottie Media</title>
-		
-		<!-- Scripts -->
-		<script src="{{ asset('js/app.js') }}" ></script>
-		<link rel="stylesheet" href="/assets/css/dashlite.css?ver=1.3.0">
-		<link id="skin-default" rel="stylesheet" href="/assets/css/theme.css?ver=1.3.0">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- CSRF Token -->
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+	@yield('meta_tags')
+	@if(env('APP_DEBUG') == 'true')
+		<meta name="robots" content="noindex,nofollow">
+	@endif
+	
+	<title>{{ config('app.name', 'Laravel') }} | Rottie Media</title>
+	
+	<!-- Scripts -->
+	<script src="{{ asset('js/app.js') }}"></script>
+	<link rel="stylesheet" href="/assets/css/dashlite.css?ver=1.3.0">
+	<link id="skin-default" rel="stylesheet" href="/assets/css/theme.css?ver=1.3.0">
 
 
 @yield('end_header')
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160451560-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'UA-160451560-1');
-    </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160451560-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('js', new Date());
+
+		gtag('config', 'UA-160451560-1');
+	</script>
 </head>
-<body >
+<body>
 	<div class="nk-app-root">
 		<!-- main @s -->
 		<div class="nk-main ">
@@ -41,9 +45,9 @@
 				<div class="nk-sidebar-element nk-sidebar-head">
 					<div class="nk-sidebar-brand">
 						<a href="/storage/nav_logo.png" class="logo-link nk-sidebar-logo">
-							<img class="logo-light logo-img" src="/storage/nav_logo.png"  alt="logo">
+							<img class="logo-light logo-img" src="/storage/nav_logo.png" alt="logo">
 							<img class="logo-dark logo-img" src="/storage/nav_logo.png" alt="logo-dark">
-							
+						
 						</a>
 					</div>
 					<div class="nk-menu-trigger mr-n2">
@@ -314,15 +318,33 @@
 										<li class="nk-menu-item">
 											<a href="#" class="nk-menu-link nk-menu-toggle"><span class="nk-menu-text">Utilities</span></a>
 											<ul class="nk-menu-sub">
-												<li class="nk-menu-item"><a href="html/general/components/elements/util-border.html" class="nk-menu-link"><span class="nk-menu-text">Border</span></a></li>
-												<li class="nk-menu-item"><a href="html/general/components/elements/util-colors.html" class="nk-menu-link"><span class="nk-menu-text">Colors</span></a></li>
-												<li class="nk-menu-item"><a href="html/general/components/elements/util-display.html" class="nk-menu-link"><span class="nk-menu-text">Display</span></a></li>
-												<li class="nk-menu-item"><a href="html/general/components/elements/util-embeded.html" class="nk-menu-link"><span class="nk-menu-text">Embeded</span></a></li>
-												<li class="nk-menu-item"><a href="html/general/components/elements/util-flex.html" class="nk-menu-link"><span class="nk-menu-text">Flex</span></a></li>
-												<li class="nk-menu-item"><a href="html/general/components/elements/util-text.html" class="nk-menu-link"><span class="nk-menu-text">Text</span></a></li>
-												<li class="nk-menu-item"><a href="html/general/components/elements/util-sizing.html" class="nk-menu-link"><span class="nk-menu-text">Sizing</span></a></li>
-												<li class="nk-menu-item"><a href="html/general/components/elements/util-spacing.html" class="nk-menu-link"><span class="nk-menu-text">Spacing</span></a></li>
-												<li class="nk-menu-item"><a href="html/general/components/elements/util-others.html" class="nk-menu-link"><span class="nk-menu-text">Others</span></a></li>
+												<li class="nk-menu-item">
+													<a href="html/general/components/elements/util-border.html" class="nk-menu-link"><span class="nk-menu-text">Border</span></a>
+												</li>
+												<li class="nk-menu-item">
+													<a href="html/general/components/elements/util-colors.html" class="nk-menu-link"><span class="nk-menu-text">Colors</span></a>
+												</li>
+												<li class="nk-menu-item">
+													<a href="html/general/components/elements/util-display.html" class="nk-menu-link"><span class="nk-menu-text">Display</span></a>
+												</li>
+												<li class="nk-menu-item">
+													<a href="html/general/components/elements/util-embeded.html" class="nk-menu-link"><span class="nk-menu-text">Embeded</span></a>
+												</li>
+												<li class="nk-menu-item">
+													<a href="html/general/components/elements/util-flex.html" class="nk-menu-link"><span class="nk-menu-text">Flex</span></a>
+												</li>
+												<li class="nk-menu-item">
+													<a href="html/general/components/elements/util-text.html" class="nk-menu-link"><span class="nk-menu-text">Text</span></a>
+												</li>
+												<li class="nk-menu-item">
+													<a href="html/general/components/elements/util-sizing.html" class="nk-menu-link"><span class="nk-menu-text">Sizing</span></a>
+												</li>
+												<li class="nk-menu-item">
+													<a href="html/general/components/elements/util-spacing.html" class="nk-menu-link"><span class="nk-menu-text">Spacing</span></a>
+												</li>
+												<li class="nk-menu-item">
+													<a href="html/general/components/elements/util-others.html" class="nk-menu-link"><span class="nk-menu-text">Others</span></a>
+												</li>
 											</ul><!-- .nk-menu-sub -->
 										</li>
 									</ul><!-- .nk-menu-sub -->
@@ -379,7 +401,8 @@
 										</li>
 										<li class="nk-menu-item">
 											<a href="#" class="nk-menu-link is-disable">
-												<span class="nk-menu-text">Wizard Basic</span> <span class="nk-menu-badge">Soon</span>
+												<span class="nk-menu-text">Wizard Basic</span>
+												<span class="nk-menu-badge">Soon</span>
 											</a>
 										</li>
 									</ul><!-- .nk-menu-sub -->
@@ -445,7 +468,8 @@
 											<em class="icon ni ni-card-view"></em>
 										</div>
 										<div class="nk-news-text">
-											<p>Do you know the latest update of 2019? <span> A overview of our is now available on YouTube</span></p>
+											<p>Do you know the latest update of 2019?
+												<span> A overview of our is now available on YouTube</span></p>
 											<em class="icon ni ni-external"></em>
 										</div>
 									</a>
@@ -479,21 +503,30 @@
 											</div>
 											<div class="dropdown-inner">
 												<ul class="link-list">
-													<li><a href="html/general/user-profile-regular.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
-													<li><a href="html/general/user-profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
-													<li><a href="html/general/user-profile-activity.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a></li>
+													<li>
+														<a href="html/general/user-profile-regular.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a>
+													</li>
+													<li>
+														<a href="html/general/user-profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a>
+													</li>
+													<li>
+														<a href="html/general/user-profile-activity.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a>
+													</li>
 												</ul>
 											</div>
 											<div class="dropdown-inner">
 												<ul class="link-list">
-													<li><a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
+													<li>
+														<a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a>
+													</li>
 												</ul>
 											</div>
 										</div>
 									</li><!-- .dropdown -->
 									<li class="dropdown notification-dropdown mr-n1">
 										<a href="#" class="dropdown-toggle nk-quick-nav-icon" data-toggle="dropdown">
-											<div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
+											<div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em>
+											</div>
 										</a>
 										<div class="dropdown-menu dropdown-menu-xl dropdown-menu-right dropdown-menu-s1">
 											<div class="dropdown-head">
@@ -507,7 +540,8 @@
 															<em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
 														</div>
 														<div class="nk-notification-content">
-															<div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+															<div class="nk-notification-text">You have requested to
+																<span>Widthdrawl</span></div>
 															<div class="nk-notification-time">2 hrs ago</div>
 														</div>
 													</div>
@@ -516,7 +550,9 @@
 															<em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
 														</div>
 														<div class="nk-notification-content">
-															<div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+															<div class="nk-notification-text">Your
+																<span>Deposit Order</span> is placed
+															</div>
 															<div class="nk-notification-time">2 hrs ago</div>
 														</div>
 													</div>
@@ -525,7 +561,8 @@
 															<em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
 														</div>
 														<div class="nk-notification-content">
-															<div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+															<div class="nk-notification-text">You have requested to
+																<span>Widthdrawl</span></div>
 															<div class="nk-notification-time">2 hrs ago</div>
 														</div>
 													</div>
@@ -534,7 +571,9 @@
 															<em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
 														</div>
 														<div class="nk-notification-content">
-															<div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+															<div class="nk-notification-text">Your
+																<span>Deposit Order</span> is placed
+															</div>
 															<div class="nk-notification-time">2 hrs ago</div>
 														</div>
 													</div>
@@ -543,7 +582,8 @@
 															<em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
 														</div>
 														<div class="nk-notification-content">
-															<div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+															<div class="nk-notification-text">You have requested to
+																<span>Widthdrawl</span></div>
 															<div class="nk-notification-time">2 hrs ago</div>
 														</div>
 													</div>
@@ -552,7 +592,9 @@
 															<em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
 														</div>
 														<div class="nk-notification-content">
-															<div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+															<div class="nk-notification-text">Your
+																<span>Deposit Order</span> is placed
+															</div>
 															<div class="nk-notification-time">2 hrs ago</div>
 														</div>
 													</div>
@@ -571,7 +613,7 @@
 				<!-- main header @e -->
 				<!-- content @s -->
 			@yield('content')
-				<!-- content @e -->
+			<!-- content @e -->
 				<!-- Footer -->
 			@include('layouts._includes.footer')
 			<!-- End Footer -->
@@ -581,24 +623,22 @@
 		<!-- main @e -->
 	</div>
 	<!-- app-root @e -->
-
-
 	
-		<!-- Navigation panel -->
+	
+	<!-- Navigation panel -->
 @include('layouts._includes.navbar')
-	<!-- End Navigation panel -->
+<!-- End Navigation panel -->
 	
-
-
-
-	
-
 	
 	<!-- JavaScript -->
 	<script src="/assets/js/bundle.js?ver=1.3.0"></script>
 	<script src="/assets/js/scripts.js?ver=1.3.0"></script>
 	<script src="/assets/js/charts/gd-general.js?ver=1.3.0"></script>
-	@yield('scripts')
-	
+@yield('scripts')
+
+
+<!-- Start of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7348542.js"></script>
+	<!-- End of HubSpot Embed Code -->
 </body>
 </html>
