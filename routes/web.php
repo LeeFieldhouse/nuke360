@@ -83,7 +83,7 @@ if(!\Illuminate\Support\Str::contains(\Illuminate\Support\Facades\URL::current()
         }
     );
 }else{
-    \Illuminate\Support\Facades\Route::get('/', function(){
+    \Illuminate\Support\Facades\Route::get('/{url?}', function(){
         return view('maintenence');
     });
 }
