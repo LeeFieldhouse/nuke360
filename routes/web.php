@@ -14,7 +14,7 @@
 
 
 
-if(\Illuminate\Support\Str::contains(\Illuminate\Support\Facades\URL::current(), 'nuke360.com')) {
+if(!\Illuminate\Support\Str::contains(\Illuminate\Support\Facades\URL::current(), 'nuke360.com')) {
     Route::middleware('optimizeImages')->group(
         function () {
             Auth::routes();
