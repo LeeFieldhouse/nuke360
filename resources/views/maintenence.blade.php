@@ -10,9 +10,7 @@
 	<link rel="stylesheet" href="/assets/css/dashlite.css?ver=1.3.0">
 	<link id="skin-default" rel="stylesheet" href="/assets/css/theme.css?ver=1.3.0">
 
-	<!-- Start of HubSpot Embed Code -->
-	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7348542.js"></script>
-	<!-- End of HubSpot Embed Code -->
+
 </head>
 <body class="nk-body bg-white npc-general pg-error">
 	<div class="nk-app-root">
@@ -183,4 +181,9 @@
 	<script src="/assets/js/bundle.js?ver=1.3.0"></script>
 	<script src="/assets/js/scripts.js?ver=1.3.0"></script>
 	<script src="/assets/js/demo-settings.js?ver=1.3.0"></script>
+	
+	<!-- Start of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader"maint async defer src="//js.hs-scripts.com/7348542.js"></script>
+	<!-- End of HubSpot Embed Code -->
+</body>
 </html>
