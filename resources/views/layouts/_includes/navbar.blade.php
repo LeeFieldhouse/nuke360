@@ -431,6 +431,7 @@
 						</a>
 					</div>
 				</div><!-- .nk-header-news -->
+				
 				<div class="nk-header-tools">
 					<ul class="nk-quick-nav">
 						<li class="dropdown user-dropdown">

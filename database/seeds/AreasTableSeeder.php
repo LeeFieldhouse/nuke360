@@ -16,7 +16,7 @@ class AreasTableSeeder extends Seeder
 				[
 					'route_name'         => 'pages.welcome.index',
 					'meta_title'         => 'Digital Agency In Bristol',
-					'meta_description'   => 'Rottie Media is a digital agency in Bristol, UK. We specialise in generating new leads & sales via social media & also creating custom web applications that can be integrated with social media for a complete marketing strategy.',
+					'meta_description'   => 'nuke360 is a digital agency in Bristol, UK. We specialise in generating new leads & sales via social media & also creating custom web applications that can be integrated with social media for a complete marketing strategy.',
 					'banner_title'       => '',
 					'banner_opacity'       => '50',
 					'banner_subtitle' => '',
@@ -26,7 +26,7 @@ class AreasTableSeeder extends Seeder
                 [
                     'route_name'         => 'pages.news.index',
                     'meta_title'         => 'Social Media Marketing Specialist News',
-                    'meta_description'   => 'Rottie Media is a digital agency in Bristol, UK. We specialise in generating new leads & sales via social media & also creating custom web applications that can be integrated with social media for a complete marketing strategy.',
+                    'meta_description'   => 'nuke360 is a digital agency in Bristol, UK. We specialise in generating new leads & sales via social media & also creating custom web applications that can be integrated with social media for a complete marketing strategy.',
                     'banner_title'       => '',
                     'banner_opacity'       => '50',
                     'banner_subtitle' => '',

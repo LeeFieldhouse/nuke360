@@ -48,8 +48,8 @@
 					</div>
 					
 					<div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-						<p><strong>Cadbury Kitchens Ltd</strong> was
-							<strong>established in 1994</strong> by Sue and Keith Fieldhouse. Cadbury Kitchens is recognised as one of Bristol’s leading suppliers and installers of beautiful and distinctive bespoke kitchens and bedrooms. Our philosophy is to offer a product that is of superior quality at an affordable price.
+						<p><strong>nuke360 Ltd</strong> was
+							<strong>established in 1994</strong> by Sue and Keith Fieldhouse. nuke360 is recognised as one of Bristol’s leading suppliers and installers of beautiful and distinctive bespoke kitchens and bedrooms. Our philosophy is to offer a product that is of superior quality at an affordable price.
 						</p>
 						
 						<p>Our small team pride ourselves on providing a Professional, Friendly and Personal Service.</p>

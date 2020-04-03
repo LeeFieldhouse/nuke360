@@ -13,7 +13,7 @@ class ContactUsSettingsTableSeeder extends Seeder
     {
     	$settings = new \App\Modules\Contact_Us\ContactUsSetting();
         $settings->contact_form_email = 'leebtc1991@gmail.com';
-        $settings->email = 'info@cadburykitchens.co.uk';
+        $settings->email = 'sales@nuke360.com';
 		$settings->address = 'Unit 15, Market Industrial Estate, N End, Yatton, Bristol BS49 4RF';
 		$settings->phone = '01934 876 321';
 		$settings->content = $faker->randomHtml();

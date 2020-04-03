@@ -14,7 +14,7 @@ class NewsCategoriesTableSeeder extends Seeder
         $categories = collect([
         	'Kitchen Design',
         	'Bedroom Design',
-        	'Cadbury Kitchens'
+        	'nuke360'
 		]);
         
         foreach($categories as $cat){

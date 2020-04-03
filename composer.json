@@ -18,6 +18,7 @@
         "benjaminhirsch/nova-slug-field": "^1.2",
         "biscolab/laravel-recaptcha": "^4.1",
         "emilianotisato/nova-tinymce": "^0.5.4",
+        "facebook/graph-sdk": "^5.7",
         "fideloper/proxy": "^4.0",
         "infinety-es/nova-filemanager": "^2.6",
         "intervention/image": "^2.5",

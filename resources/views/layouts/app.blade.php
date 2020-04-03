@@ -11,7 +11,7 @@
 		<meta name="robots" content="noindex,nofollow">
 	@endif
 	
-	<title>{{ config('app.name', 'Laravel') }} | Rottie Media</title>
+	<title>{{ config('app.name', 'Laravel') }} | nuke360</title>
 	
 	<!-- Scripts -->
 	<script src="{{ asset('js/app.js') }}"></script>

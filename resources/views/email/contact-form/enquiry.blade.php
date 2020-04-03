@@ -7,7 +7,7 @@
 	<title>{{$name}}</title>
 </head>
 <body>
-	<h3>Cadbury Kitchens</h3>
+	<h3>nuke360</h3>
 	<p>You received an enquiry from the contact us page!</p>
 	
 	<ul>

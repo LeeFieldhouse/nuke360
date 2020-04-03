@@ -2,7 +2,7 @@
 @section('meta_title', $area->meta_title)
 @section('meta_description', $area->meta_description)
 @section('meta_tags')
-	<meta property="og:title" content="{{$area->meta_title}} | Cadbury Kitchens">
+	<meta property="og:title" content="{{$area->meta_title}} | nuke360">
 	<meta property="og:description" content="{{$area->meta_description}}">
 	<meta property="og:image" content="{{\Illuminate\Support\Facades\Request::root()}}/storage/portfolios/images/images/thumbnails/thumb_1.jpg">
 	<meta property="og:url" content="{{\Illuminate\Support\Facades\URL::current()}}">
@@ -18,7 +18,7 @@
 		<div class="container relative">
 		
 		{{--			<h2 class="section-title font-alt mb-70 mb-sm-40">--}}
-		{{--				Cadbury Kitchens Portfolio--}}
+		{{--				nuke360 Portfolio--}}
 		{{--			</h2>--}}
 		
 		<!-- Row -->
@@ -31,7 +31,7 @@
 					<!-- Paragraph -->
 					<div class="text" style="height: 100%!important;">
 						
-						<h5 class="uppercase mb-30">Cadbury Kitchens - Bedroom & Kitchen Portfolio</h5>
+						<h5 class="uppercase mb-30">nuke360 - Bedroom & Kitchen Portfolio</h5>
 						
 						<p>
 							We are currently in the process of upgrading our website, our latest projects may not be shown here yet.
@@ -70,7 +70,7 @@
 						</p>
 						<p class="footer-social-links">
 							<a href="tel:01934876200"><i class="fa fa-phone"></i></a>
-							<a href="mailto:info@cadburykitchens.co.uk"><i class="fa fa-envelope"></i> </a>
+							<a href="mailto:sales@nuke360.com"><i class="fa fa-envelope"></i> </a>
 						</p>
 						
 						<a href="{{route('pages.contact.index')}}" class="btn btn-mod btn-border btn-small btn-round"><i class="fa fa-calendar"></i>Book Free Design Consultation</a>

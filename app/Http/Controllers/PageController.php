@@ -9,6 +9,8 @@ use App\Modules\Teams\TeamMember;
 
 use App\SocialLink;
 use App\Traits\ControllerAreaTrait;
+use Facebook\Exceptions\FacebookSDKException;
+use Facebook\Facebook;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -19,6 +21,8 @@ class PageController extends Controller
 	{
 		$images = PortfolioImage::inRandomorder()->take(3)->get();
 		$info_cards = HomePageInfoCard::all();
+		
+
 		
 		return view('pages.home.index', [
 			'portfolio_images' => $images,

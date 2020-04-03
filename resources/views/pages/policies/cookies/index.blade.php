@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('meta_title', 'Cookie Policy')
-@section('meta_description', 'Cadbury Kitchens uses cookies on our website to provide a better experience for our users. Find the details here.')
+@section('meta_description', 'nuke360 uses cookies on our website to provide a better experience for our users. Find the details here.')
 @section('content')
 	<div class="page-section">
 		<div class="container">
-			<h1>Cookie Policy for Cadbury Kitchens Ltd.</h1>
+			<h1>Cookie Policy for nuke360 Ltd.</h1>
 			
-			<p>This is the Cookie Policy for Cadbury Kitchens Ltd., accessible from https://cadburykitchens.co.uk</p>
+			<p>This is the Cookie Policy for nuke360 Ltd., accessible from https://nuke360.com</p>
 			
 			<p><strong>What Are Cookies</strong></p>
 			
@@ -92,7 +92,7 @@
 			<p>However if you are still looking for more information then you can contact us through one of our preferred contact methods:</p>
 			
 			<ul>
-				<li>Email: info@cadburykitchens.co.uk</li>
+				<li>Email: sales@nuke360.com</li>
 				
 				<li>Phone: 01934 876321</li></ul>
 		</div>

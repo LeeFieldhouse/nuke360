@@ -21,7 +21,7 @@ class KitchenStylesTableSeeder extends Seeder
         foreach($styles as $style => $image){
         	\App\Modules\Kitchens\KitchenStyle::create([
         		'meta_title' => $style . ' Kitchens',
-				'meta_description' => $style. ' Kitchens at Cadbury Kitchens',
+				'meta_description' => $style. ' Kitchens at nuke360',
 				'name' => $style,
 				'slug' => \Illuminate\Support\Str::slug(strtolower($style)),
 				'description' => 'This is the default description, change me in nova',

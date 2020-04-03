@@ -21,7 +21,7 @@ class BedroomStylesTableSeeder extends Seeder
 		foreach($styles as $style => $image){
 			\App\Modules\Bedrooms\BedroomStyle::create([
 				'meta_title' => $style . ' Bedrooms',
-				'meta_description' => $style. ' Bedrooms at Cadbury Kitchens',
+				'meta_description' => $style. ' Bedrooms at nuke360',
 				'name' => $style,
 				'slug' => \Illuminate\Support\Str::slug(strtolower($style)),
 				'description' => 'This is the default description, change me in nova',

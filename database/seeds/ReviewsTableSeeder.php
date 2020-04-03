@@ -14,7 +14,7 @@ class ReviewsTableSeeder extends Seeder
         $reviews = collect([
         	[
         		'name' => 'Tracey Dawe',
-				'content' => '<p>From start to finish Cadbury Kitchens were excellent, especially Sue who designed not only our kitchen but our whole extension !! Very professional but we had fun along the way, would recommend sue and her team with no hesitation, thank you very much we love it !! Tracey and Barry( Backwell )</p>',
+				'content' => '<p>From start to finish nuke360 were excellent, especially Sue who designed not only our kitchen but our whole extension !! Very professional but we had fun along the way, would recommend sue and her team with no hesitation, thank you very much we love it !! Tracey and Barry( Backwell )</p>',
 				'class' => 'fa fa-facebook',
 				'url' => 'https://www.facebook.com/pg/CadburyKitchens/reviews/'
 			],
@@ -35,7 +35,7 @@ we are so pleased with our new kitchen.</p>',
 			],
 			[
 				'name' => 'Carole Finch',
-				'content' => '<p>As soon as we met Sue, I knew that we were in safe hands. She guided us through the process and made everything so easy. We changed our minds numerous times throughout and nothing was too much trouble. All the workmen have worked with Sue for many years and they work well together. Smooth from start to finish. We thoroughly recommend Cadbury Kitchens.</p>',
+				'content' => '<p>As soon as we met Sue, I knew that we were in safe hands. She guided us through the process and made everything so easy. We changed our minds numerous times throughout and nothing was too much trouble. All the workmen have worked with Sue for many years and they work well together. Smooth from start to finish. We thoroughly recommend nuke360.</p>',
 				'class' => 'fa fa-facebook',
 				'url' => 'https://www.facebook.com/pg/CadburyKitchens/reviews/'
 			],

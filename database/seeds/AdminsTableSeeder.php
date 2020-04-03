@@ -29,7 +29,7 @@ class AdminsTableSeeder extends Seeder
 		\App\Admin::create(
 			[
 				'name'     => 'Sue',
-				'email'    => 'sue@cadburykitchens.co.uk',
+				'email'    => 'sue@nuke360.com',
 				'password' => bcrypt(env('MUM_PASSWORD')),
 			]
 		);
