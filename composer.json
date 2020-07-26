@@ -20,10 +20,12 @@
         "emilianotisato/nova-tinymce": "^0.5.4",
         "facebook/graph-sdk": "^5.7",
         "fideloper/proxy": "^4.0",
+        "hubspot/hubspot-php": "^2.0",
         "infinety-es/nova-filemanager": "^2.6",
         "intervention/image": "^2.5",
         "laravel/framework": "^6.2",
         "laravel/nova": "~2.0",
+
         "laravel/socialite": "^4.3",
         "laravel/tinker": "^1.0",
         "laravel/ui": "^1.1",

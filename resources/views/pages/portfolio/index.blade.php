@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.backend_app')
 @section('meta_title', $area->meta_title)
 @section('meta_description', $area->meta_description)
 @section('meta_tags')
@@ -11,28 +11,28 @@
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=190951205323680&autoLogAppEvents=1"></script>
 	<!-- Head Section -->
-	
+
 	@include('pages._includes.banners.area.index')
-	
+
 	<section class="mt-40 ">
 		<div class="container relative">
-		
+
 		{{--			<h2 class="section-title font-alt mb-70 mb-sm-40">--}}
 		{{--				nuke360 Portfolio--}}
 		{{--			</h2>--}}
-		
+
 		<!-- Row -->
 			<div class="row">
-				
+
 				<!-- Col -->
-				
+
 				<div class="col-sm-6 mb-40">
-					
+
 					<!-- Paragraph -->
 					<div class="text" style="height: 100%!important;">
-						
+
 						<h5 class="uppercase mb-30">nuke360 - Bedroom & Kitchen Portfolio</h5>
-						
+
 						<p>
 							We are currently in the process of upgrading our website, our latest projects may not be shown here yet.
 						</p>
@@ -44,24 +44,24 @@
 								<a href="{{$link->link}}" title="{{$link->name}}"><i class="{{$link->class}}"></i></a>
 								@endforeach
 						</p>
-						
+
 						<a target="_blank" class="btn btn-mod btn-border btn-small btn-round fb-xfbml-parse-ignore" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F{{env('URL_AFTER')}}%2Fportfolio&amp;"><i class="fa fa-facebook"></i> Share on facebook</a>
 					</div>
 					<!-- End Paragraph -->
-				
+
 				</div>
-				
+
 				<!-- End Col -->
-				
+
 				<!-- Col -->
-				
+
 				<div class="col-sm-6 mb-40">
-					
+
 					<!-- Paragraph -->
 					<div class="text">
-						
+
 						<h5 class="uppercase mb-30">No Obligation Design Consultation</h5>
-						
+
 						<p>
 							All our projects below started with a free design consultation.
 						</p>
@@ -72,24 +72,24 @@
 							<a href="tel:01934876200"><i class="fa fa-phone"></i></a>
 							<a href="mailto:sales@nuke360.com"><i class="fa fa-envelope"></i> </a>
 						</p>
-						
+
 						<a href="{{route('pages.contact.index')}}" class="btn btn-mod btn-border btn-small btn-round"><i class="fa fa-calendar"></i>Book Free Design Consultation</a>
-					
+
 					</div>
 					<!-- End Paragraph -->
-				
+
 				</div>
-				
+
 				<!-- End Col -->
-			
-			
+
+
 			</div>
 			<!-- End Row -->
-		
+
 		</div>
 	</section>
 	<!-- End Head Section -->
-	
+
 	<!-- Portfolio Section -->
 	<section class="mt-40">
 		<div class="container relative">
@@ -101,7 +101,7 @@
 		{{--				<a href="#photography" class="filter" data-filter=".photography">Photography</a>--}}
 		{{--			</div>--}}
 		<!-- End Works Filter -->
-			
+
 			<!-- Works Grid -->
 			<ul class="works-grid work-grid-3 work-grid-gut clearfix font-alt hover-white" id="work-grid">
 			@foreach($images as $index => $image)
@@ -169,7 +169,7 @@
 		</div>
 	</section>
 	<!-- End Portfolio Section -->
-	
+
 	<!-- Call Action Section -->
 	<section class="small-section bg-dark mt-40">
 		<div class="container relative">
@@ -179,7 +179,7 @@
 					<a href="{{route('pages.contact.index')}}" class="btn btn-mod btn-w btn-medium btn-round">Contact Us Today For A No Obligation Free Design Consultation</a>
 				</div>
 			</div>
-		
+
 		</div>
 	</section>
 	<!-- End Call Action Section -->

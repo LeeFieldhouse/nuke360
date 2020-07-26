@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.backend_app')
 
 @section('content')
 	<div class="" >
-		
+
 		<div class="nk-split nk-split-page nk-split-md" >
 			<div class="nk-split-content nk-block-area nk-block-area-column nk-auth-container w-lg-45">
 				<div class="absolute-top-right d-lg-none p-3 p-sm-5">
@@ -61,7 +61,7 @@
 						<li class="nav-item"><a class="nav-link" href="#">Google</a></li>
 					</ul>
 				</div>
-			
+
 			</div>
 			<div class="nk-split-content nk-split-stretch bg-lighter d-flex toggle-break-lg toggle-slide toggle-slide-right toggle-screen-lg" data-content="athPromo" data-toggle-screen="lg" data-toggle-overlay="true">
 				<div class="slider-wrap w-100 w-max-550px p-3 p-sm-5 m-auto">
@@ -140,9 +140,9 @@
 								{{--								</div>--}}
 								{{--							</div>--}}
 							</div>
-						
+
 						</div>
-						
+
 						{{--					<ul class="slick-dots" style="" role="tablist">--}}
 						{{--						<li class="" role="presentation">--}}
 						{{--							<button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="-1">1</button>--}}
@@ -154,7 +154,7 @@
 						{{--							<button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button>--}}
 						{{--						</li>--}}
 						{{--					</ul>--}}
-					
+
 					</div>
 				</div>
 			</div>

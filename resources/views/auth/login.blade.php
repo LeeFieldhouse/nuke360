@@ -1,108 +1,81 @@
-@extends('layouts.app')
+@extends('layouts.backend_app')
 
 @section('content')
 	@php
 		$area = \App\Modules\Areas\Area::where('route_name', 'pages.welcome.index')->first()
 	@endphp
 	<!-- Head Section -->
-	<section class="page-section bg-dark-alfa-{{$area->banner_opacity}} parallax-3" data-background="{{$area->banner_image}}">
-		<div class=" container ">
-			
-			<div class="row text-center">
-				
-				<div>
-					<h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Login</h1>
-				
-				</div>
-			
-			</div>
-		</div>
-		
-	</section>
-	<!-- End Head Section -->
-	
-	
-	<!-- Section -->
-	<section class="page-section">
-		<div class="container relative">
-			
-			<!-- Nav Tabs -->
-			<div class="align-center mb-40 mb-xxs-30">
-				<ul class="nav nav-tabs tpl-minimal-tabs">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-10">
+				<div class="card">
+					<div class="card-header">{{ __('Login') }}</div>
 					
-					<li class="active">
-						<a>Login</a>
-					</li>
-					
-					<li>
-						<a href="{{route('register')}}">Registration</a>
-					</li>
-				
-				</ul>
-			</div>
-			<!-- End Nav Tabs -->
-			
-			<!-- Tab panes -->
-			<div class="tab-content tpl-minimal-tabs-cont section-text">
-				<!-- Login Form -->
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4">
-						
-						<form action="{{route('login')}}" class="form contact-form" id="contact_form" method="post">
-                            @csrf
-							<div class="clearfix">
-								
-								<!-- Username -->
-								<div class="form-group">
-									<input type="text" name="email" id="username" class="input-md round form-control" placeholder="Email" pattern=".{3,100}" required>
-								</div>
-								
-								<!-- Password -->
-								<div class="form-group">
-									<input type="password" name="password" id="password" class="input-md round form-control" placeholder="Password" pattern=".{5,100}" required>
-								</div>
+					<div class="card-body">
+						<form method="POST" action="{{ route('login') }}">
+							@csrf
 							
+							<div class="form-group row">
+								<label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+								
+								<div class="col-md-6">
+									<input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+									
+									@if ($errors->has('email'))
+										<span class="invalid-feedback">
+											<strong>{{ $errors->first('email') }}</strong>
+										</span>
+									@endif
+								</div>
 							</div>
 							
-							<div class="clearfix">
+							<div class="form-group row">
+								<label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 								
-								<div class="cf-left-col">
+								<div class="col-md-6">
+									<input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 									
-									<!-- Inform Tip -->
-									<div class="form-tip pt-20">
-										<a href="">Forgot Password?</a>
-									</div>
-								
+									@if ($errors->has('password'))
+										<span class="invalid-feedback">
+											<strong>{{ $errors->first('password') }}</strong>
+										</span>
+									@endif
 								</div>
-								
-								<div class="cf-right-col">
-									
-									<!-- Send Button -->
-									<div class="align-right pt-10">
-										<button class="submit_btn btn btn-mod btn-medium btn-round" id="login-btn">Login</button>
-									</div>
-								
-								</div>
-							
 							</div>
+							
+							<div class="form-group row">
+								<div class="col-md-6 offset-md-4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
+										</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-group row mb-4">
+								<div class="col-md-8 offset-md-4">
+									<button type="submit" class="btn btn-primary">
+										{{ __('Login') }}
+									</button>
+									
+									<a class="btn btn-link" href="{{ route('password.request') }}">
+										{{ __('auth.forgot') }}
+									</a>
+								</div>
+							</div>
+							
+							<p class="text-center mb-3">
+								Or Login with
+							</p>
+							
+							
 						
 						</form>
-					
 					</div>
 				</div>
-				<!-- End Login Form -->
-			</div>
-		
-		</div>
-		<br />
-		<p style="margin-left:265px">OR</p>
-		<br />
-		<div class="form-group">
-			<div class="col-md-8 col-md-offset-4">
-				<a href="{{url('/redirect')}}" class="btn btn-primary">Login with Facebook</a>
 			</div>
 		</div>
-	</section>
-	<!-- End Section -->
+	</div>
 
 @endsection

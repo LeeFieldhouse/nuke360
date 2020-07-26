@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.backend_app')
 @section('meta_title', $area->meta_title)
 @section('meta_description', $area->meta_description)
 @section('end_header')

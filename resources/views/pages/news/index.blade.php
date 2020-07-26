@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.backend_app')
 @section('meta_title', $area->meta_title)
 @section('meta_description', $area->meta_description)
 @section('content')
-	
+
 	<!-- ==============================================
 **Inner Banner**
 =================================================== -->
@@ -14,7 +14,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- ==============================================
 	**Blog section**
 	=================================================== -->
@@ -195,7 +195,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- ==============================================
 	**Signup Section**
 	=================================================== -->
